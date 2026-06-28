@@ -14,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 19,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAADwv1UAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-28T18:36:31.223Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -40,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-28T18:36:31.223Z",
+              "EditorCaption": ""
             }
           ]
         }

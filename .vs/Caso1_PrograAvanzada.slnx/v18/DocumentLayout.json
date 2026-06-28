@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\reservacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\reservacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedHeight": 19,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv3sAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-28T21:53:20.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-28T21:52:14.915Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -30,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
               "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
