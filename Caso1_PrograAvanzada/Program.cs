@@ -11,6 +11,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<Conexion>();
 builder.Services.AddScoped<HabitacionDAL>();
 builder.Services.AddScoped<HabitacionBLL>();
+builder.Services.AddScoped<ReservacionDAL>();
+builder.Services.AddScoped<ReservacionBLL>();
 
 var app = builder.Build();
 

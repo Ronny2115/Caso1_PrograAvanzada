@@ -1,0 +1,86 @@
+﻿@model Caso1_PrograAvanzada.Entities.Reservacion
+
+@{
+    ViewData["Title"] = "Registrar Reservación";
+}
+
+<h2 class="mb-4">Registrar Reservación</h2>
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<form asp-action="Create" method="post">
+
+    <input asp-for="IdHabitacion" type="hidden" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="NombreDeLaPersona" class="form-label"></label>
+            <input asp-for="NombreDeLaPersona" class="form-control" />
+            <span asp-validation-for="NombreDeLaPersona" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="Identificacion" class="form-label"></label>
+            <input asp-for="Identificacion" class="form-control" />
+            <span asp-validation-for="Identificacion" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="Telefono" class="form-label"></label>
+            <input asp-for="Telefono" class="form-control" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="Correo" class="form-label"></label>
+            <input asp-for="Correo" class="form-control" />
+            <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="FechaNacimiento" class="form-label"></label>
+            <input asp-for="FechaNacimiento" type="date" class="form-control" />
+            <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="FechaInicioReserva" class="form-label"></label>
+            <input asp-for="FechaInicioReserva" type="date" class="form-control" />
+            <span asp-validation-for="FechaInicioReserva" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label asp-for="FechaFinReserva" class="form-label"></label>
+            <input asp-for="FechaFinReserva" type="date" class="form-control" />
+            <span asp-validation-for="FechaFinReserva" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label asp-for="Direccion" class="form-label"></label>
+            <textarea asp-for="Direccion" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="Direccion" class="text-danger"></span>
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Registrar Reservación
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

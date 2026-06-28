@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\habitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\habitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\habitacion\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\habitacion\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\controllers\\habitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\controllers\\habitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\bll\\habitacionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\bll\\habitacionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\dal\\habitaciondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\dal\\habitaciondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\habitacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\habitacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|c:\\users\\andre\\documents\\documentos u\\programacion avanzada\\caso1_prograavanzada\\caso1_prograavanzada\\views\\reservacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAB9D293-2A0A-42CA-CB6E-6BCEEFEEF5E6}|Caso1_PrograAvanzada\\Caso1_PrograAvanzada.csproj|solutionrelative:caso1_prograavanzada\\views\\reservacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 19,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,106 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Habitacion\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Edit.cshtml",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Habitacion\\Edit.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAADwv3MAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-28T07:54:38.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Create.cshtml",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Habitacion\\Create.cshtml",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Create.cshtml",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Habitacion\\Create.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAiwEMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-28T07:45:38.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HabitacionDAL.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\DAL\\HabitacionDAL.cs",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\DAL\\HabitacionDAL.cs",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\DAL\\HabitacionDAL.cs",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\DAL\\HabitacionDAL.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAIwMEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T07:40:56.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\appsettings.json",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\appsettings.json",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\appsettings.json",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T07:36:45.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Index.cshtml",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Habitacion\\Index.cshtml",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Habitacion\\Index.cshtml",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Habitacion\\Index.cshtml",
-              "ViewState": "AgIAAFAAAAAAAAAAAADwv3UAAAAIAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "RelativeToolTip": "Caso1_PrograAvanzada\\Views\\Reservacion\\Create.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-28T07:34:45.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HabitacionController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Controllers\\HabitacionController.cs",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Controllers\\HabitacionController.cs",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Controllers\\HabitacionController.cs",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Controllers\\HabitacionController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAADwv1QAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T07:33:54.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HabitacionBLL.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\BLL\\HabitacionBLL.cs",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\BLL\\HabitacionBLL.cs",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\BLL\\HabitacionBLL.cs",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\BLL\\HabitacionBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T07:32:09.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Program.cs",
-              "RelativeDocumentMoniker": "Caso1_PrograAvanzada\\Program.cs",
-              "ToolTip": "C:\\Users\\andre\\Documents\\DOCUMENTOS U\\Programacion Avanzada\\Caso1_PrograAvanzada\\Caso1_PrograAvanzada\\Program.cs",
-              "RelativeToolTip": "Caso1_PrograAvanzada\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T07:29:38.195Z",
+              "WhenOpened": "2026-06-28T18:36:31.223Z",
               "EditorCaption": ""
             }
           ]

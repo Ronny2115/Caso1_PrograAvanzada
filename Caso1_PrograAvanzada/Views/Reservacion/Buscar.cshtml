@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Buscar Reservación";
+}
+
+<h2 class="mb-4">
+
+    Buscar Reservación
+
+</h2>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-danger">
+
+        @TempData["Mensaje"]
+
+    </div>
+}
+
+<form asp-action="Buscar" method="post">
+
+    <div class="mb-3">
+
+        <label class="form-label">
+
+            ID de la Reservación
+
+        </label>
+
+        <input type="number"
+               name="id"
+               class="form-control" />
+
+    </div>
+
+    <button class="btn btn-primary">
+
+        Buscar
+
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+
+        Regresar
+
+    </a>
+
+</form>

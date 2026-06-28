@@ -7,23 +7,29 @@ namespace Caso1_PrograAvanzada.Controllers
     public class HabitacionController : Controller
     {
         private readonly HabitacionBLL _habitacionBLL;
+        private readonly ReservacionBLL _reservacionBLL;
 
-        public HabitacionController(HabitacionBLL habitacionBLL)
+        public HabitacionController(
+            HabitacionBLL habitacionBLL,
+            ReservacionBLL reservacionBLL)
         {
             _habitacionBLL = habitacionBLL;
+            _reservacionBLL = reservacionBLL;
         }
 
         //==========================
-        // LISTAR
+        // LISTAR HABITACIONES
         //==========================
 
         public IActionResult Index()
         {
-            return View(_habitacionBLL.ListarHabitaciones());
+            var lista = _habitacionBLL.ListarHabitaciones();
+
+            return View(lista);
         }
 
         //==========================
-        // REGISTRAR
+        // REGISTRAR HABITACION
         //==========================
 
         [HttpGet]
@@ -53,7 +59,7 @@ namespace Caso1_PrograAvanzada.Controllers
         }
 
         //==========================
-        // EDITAR
+        // EDITAR HABITACION
         //==========================
 
         [HttpGet]
@@ -80,6 +86,20 @@ namespace Caso1_PrograAvanzada.Controllers
                 ViewBag.Mensaje = ex.Message;
                 return View(habitacion);
             }
+        }
+
+        //==========================
+        // VER RESERVACIONES
+        //==========================
+
+        [HttpGet]
+        public IActionResult Reservas(int id)
+        {
+            var lista = _reservacionBLL.ListarReservaciones(id);
+
+            ViewBag.IdHabitacion = id;
+
+            return View(lista);
         }
     }
 }

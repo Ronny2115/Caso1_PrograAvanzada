@@ -1,0 +1,72 @@
+﻿@model List<Caso1_PrograAvanzada.Entities.Reservacion>
+
+@{
+    ViewData["Title"] = "Reservaciones";
+}
+
+<h2>Historial de Reservaciones</h2>
+
+<a asp-action="Index" class="btn btn-secondary mb-3">
+    Regresar
+</a>
+
+<table class="table table-bordered">
+
+    <thead class="table-dark">
+
+        <tr>
+
+            <th>Nombre</th>
+
+            <th>Teléfono</th>
+
+            <th>Correo</th>
+
+            <th>Identificación</th>
+
+            <th>Monto</th>
+
+            <th>Nacimiento</th>
+
+            <th>Inicio</th>
+
+            <th>Fin</th>
+
+            <th>Registro</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>@item.NombreDeLaPersona</td>
+
+                <td>@item.Telefono</td>
+
+                <td>@item.Correo</td>
+
+                <td>@item.Identificacion</td>
+
+                <td>@item.MontoTotal.ToString("C")</td>
+
+                <td>@item.FechaNacimiento.ToShortDateString()</td>
+
+                <td>@item.FechaInicioReserva.ToShortDateString()</td>
+
+                <td>@item.FechaFinReserva.ToShortDateString()</td>
+
+                <td>@item.FechaDeRegistro.ToShortDateString()</td>
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>

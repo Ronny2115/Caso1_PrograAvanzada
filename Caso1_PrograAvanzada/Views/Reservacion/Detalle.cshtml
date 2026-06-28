@@ -1,0 +1,152 @@
+﻿@model Caso1_PrograAvanzada.Entities.Reservacion
+
+@{
+    ViewData["Title"] = "Detalle de Reservación";
+}
+
+<h2 class="mb-4">
+
+    Detalle de la Reservación
+
+</h2>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">
+
+        @TempData["Mensaje"]
+
+    </div>
+}
+
+<div class="card">
+
+    <div class="card-body">
+
+        <table class="table">
+
+            <tr>
+
+                <th>ID</th>
+
+                <td>@Model.Id</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Nombre</th>
+
+                <td>@Model.NombreDeLaPersona</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Identificación</th>
+
+                <td>@Model.Identificacion</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Teléfono</th>
+
+                <td>@Model.Telefono</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Correo</th>
+
+                <td>@Model.Correo</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Fecha Nacimiento</th>
+
+                <td>@Model.FechaNacimiento.ToShortDateString()</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Dirección</th>
+
+                <td>@Model.Direccion</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Fecha Inicio</th>
+
+                <td>@Model.FechaInicioReserva.ToShortDateString()</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Fecha Fin</th>
+
+                <td>@Model.FechaFinReserva.ToShortDateString()</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Monto Total</th>
+
+                <td>
+
+                    <strong>
+
+                        @Model.MontoTotal.ToString("C")
+
+                    </strong>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Fecha Registro</th>
+
+                <td>@Model.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
+
+            </tr>
+
+            <tr>
+
+                <th>Habitación</th>
+
+                <td>@Model.IdHabitacion</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<br />
+
+<a asp-action="Index"
+   class="btn btn-primary">
+
+    Volver
+
+</a>
+
+<a asp-action="Buscar"
+   class="btn btn-secondary">
+
+    Buscar otra
+
+</a>

@@ -35,12 +35,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Habitacion/Reservas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvblxSZXNlcnZhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Reservacion/Buscar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25cQnVzY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Reservacion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Reservacion/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25cRGV0YWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Reservacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/Documents/DOCUMENTOS U/Programacion Avanzada/Caso1_PrograAvanzada/Caso1_PrograAvanzada/Views/Shared/Error.cshtml]
