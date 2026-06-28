@@ -1,0 +1,93 @@
+﻿@model Caso1_PrograAvanzada.Entities.Habitacion
+
+@{
+    ViewData["Title"] = "Registrar Habitación";
+}
+
+<h2 class="mb-4">Registrar Habitación</h2>
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<form asp-action="Create" method="post">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Código</label>
+            <input asp-for="CodigoDeHabitacion" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Nombre</label>
+            <input asp-for="NombreDeHabitacion" class="form-control" />
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Cantidad de Huéspedes</label>
+            <input asp-for="CantidadDeHuespedesPermitidos" class="form-control" />
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Cantidad de Camas</label>
+            <input asp-for="CantidadDeCamas" class="form-control" />
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Cantidad de Baños</label>
+            <input asp-for="CantidadDeBanos" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Ubicación</label>
+            <input asp-for="Ubicacion" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Encargado de Limpieza</label>
+            <input asp-for="EncargadoDeLimpieza" class="form-control" />
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Tipo de Habitación</label>
+
+            <select asp-for="TipoDeHabitacion" class="form-select">
+
+                <option value="">Seleccione...</option>
+
+                <option value="1">Junior</option>
+
+                <option value="2">Superior</option>
+
+                <option value="3">Suite</option>
+
+            </select>
+
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <label class="form-label">Costo Limpieza</label>
+            <input asp-for="CostoDeLimpieza" class="form-control" />
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <label class="form-label">Costo Reserva</label>
+            <input asp-for="CostoDeReserva" class="form-control" />
+        </div>
+
+
+    </div>
+
+    <button class="btn btn-success">
+        Guardar
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Regresar
+    </a>
+
+</form>

@@ -1,0 +1,118 @@
+﻿@model List<Caso1_PrograAvanzada.Entities.Habitacion>
+
+@{
+    ViewData["Title"] = "Habitaciones";
+}
+
+<h2 class="mb-4">Listado de Habitaciones</h2>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mensaje"]
+    </div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Nueva Habitación
+    </a>
+</p>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+
+        <tr>
+
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+            <th>Huéspedes</th>
+            <th>Camas</th>
+            <th>Baños</th>
+            <th>Encargado</th>
+            <th>Costo Limpieza</th>
+            <th>Costo Reserva</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.CodigoDeHabitacion</td>
+
+                    <td>@item.NombreDeHabitacion</td>
+
+                    <td>@item.Ubicacion</td>
+
+                    <td>@item.CantidadDeHuespedesPermitidos</td>
+
+                    <td>@item.CantidadDeCamas</td>
+
+                    <td>@item.CantidadDeBanos</td>
+
+                    <td>@item.EncargadoDeLimpieza</td>
+
+                    <td>@item.CostoDeLimpieza.ToString("C")</td>
+
+                    <td>@item.CostoDeReserva.ToString("C")</td>
+
+                    <td>
+                        @(item.TipoDeHabitacion == 1 ? "Junior" :
+                            item.TipoDeHabitacion == 2 ? "Superior" :
+                            "Suite")
+                    </td>
+
+                    <td>
+                        @if (item.Estado)
+                        {
+                            <span class="badge bg-success">Activo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Inactivo</span>
+                        }
+                    </td>
+
+                    <td>
+
+                        <a asp-action="Edit"
+                           asp-route-id="@item.Id"
+                           class="btn btn-warning btn-sm">
+                            Editar
+                        </a>
+
+                        <a asp-action="Reservas"
+                           asp-route-id="@item.Id"
+                           class="btn btn-info btn-sm">
+                            Ver Reservas
+                        </a>
+
+                    </td>
+
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="12" class="text-center">
+                    No existen habitaciones registradas.
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
