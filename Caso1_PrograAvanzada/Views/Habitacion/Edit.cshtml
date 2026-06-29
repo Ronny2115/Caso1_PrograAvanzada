@@ -4,113 +4,228 @@
     ViewData["Title"] = "Editar Habitación";
 }
 
-<h2>Editar Habitación</h2>
+<div class="card shadow">
 
-@if (ViewBag.Mensaje != null)
-{
-    <div class="alert alert-danger">
-        @ViewBag.Mensaje
+    <div class="card-header bg-warning">
+
+        <h3 class="mb-0">
+            ✏️ Editar Habitación
+        </h3>
+
     </div>
+
+    <div class="card-body">
+
+        @if (ViewBag.Mensaje != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show">
+
+                @ViewBag.Mensaje
+
+                <button class="btn-close" data-bs-dismiss="alert"></button>
+
+            </div>
+        }
+
+        <form asp-action="Edit" id="frmEditarHabitacion">
+
+            <input asp-for="Id" type="hidden" />
+            <input asp-for="CodigoDeHabitacion" type="hidden" />
+            <input asp-for="NombreDeHabitacion" type="hidden" />
+            <input asp-for="CantidadDeBanos" type="hidden" />
+            <input asp-for="Ubicacion" type="hidden" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label fw-bold">
+
+                        Código
+
+                    </label>
+
+                    <input value="@Model.CodigoDeHabitacion"
+                           class="form-control"
+                           disabled />
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label fw-bold">
+
+                        Nombre
+
+                    </label>
+
+                    <input value="@Model.NombreDeHabitacion"
+                           class="form-control"
+                           disabled />
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label asp-for="CantidadDeHuespedesPermitidos"
+                           class="form-label fw-bold"></label>
+
+                    <input asp-for="CantidadDeHuespedesPermitidos"
+                           class="form-control" />
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label asp-for="CantidadDeCamas"
+                           class="form-label fw-bold"></label>
+
+                    <input asp-for="CantidadDeCamas"
+                           class="form-control" />
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label class="form-label fw-bold">
+
+                        Baños
+
+                    </label>
+
+                    <input value="@Model.CantidadDeBanos"
+                           class="form-control"
+                           disabled />
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label fw-bold">
+
+                        Ubicación
+
+                    </label>
+
+                    <input value="@Model.Ubicacion"
+                           class="form-control"
+                           disabled />
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label asp-for="EncargadoDeLimpieza"
+                           class="form-label fw-bold"></label>
+
+                    <input asp-for="EncargadoDeLimpieza"
+                           class="form-control" />
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label asp-for="TipoDeHabitacion"
+                           class="form-label fw-bold"></label>
+
+                    <select asp-for="TipoDeHabitacion"
+                            class="form-select">
+
+                        <option value="1">Junior</option>
+                        <option value="2">Superior</option>
+                        <option value="3">Suite</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label asp-for="CostoDeLimpieza"
+                           class="form-label fw-bold"></label>
+
+                    <input asp-for="CostoDeLimpieza"
+                           class="form-control"
+                           step="0.01" />
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label asp-for="CostoDeReserva"
+                           class="form-label fw-bold"></label>
+
+                    <input asp-for="CostoDeReserva"
+                           class="form-control"
+                           step="0.01" />
+
+                </div>
+
+                <div class="col-md-12">
+
+                    <div class="form-check">
+
+                        <input asp-for="Estado"
+                               class="form-check-input" />
+
+                        <label asp-for="Estado"
+                               class="form-check-label">
+
+                            Habitación Activa
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="d-flex justify-content-end gap-2">
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+
+                    ← Cancelar
+
+                </a>
+
+                <button type="submit"
+                        class="btn btn-warning">
+
+                    💾 Guardar Cambios
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+
+        document.getElementById("frmEditarHabitacion")
+            .addEventListener("submit", function () {
+
+                const boton = this.querySelector("button[type='submit']");
+
+                boton.disabled = true;
+
+                boton.innerHTML = "⏳ Guardando...";
+
+            });
+
+    </script>
+
 }
-
-<form asp-action="Edit">
-
-    <input asp-for="Id" type="hidden" />
-
-    <input asp-for="CodigoDeHabitacion" type="hidden" />
-
-    <input asp-for="NombreDeHabitacion" type="hidden" />
-
-    <input asp-for="CantidadDeBanos" type="hidden" />
-
-    <input asp-for="Ubicacion" type="hidden" />
-
-    <div class="mb-3">
-
-        <label>Huéspedes</label>
-
-        <input asp-for="CantidadDeHuespedesPermitidos"
-               class="form-control" />
-
-    </div>
-
-    <div class="mb-3">
-
-        <label>Camas</label>
-
-        <input asp-for="CantidadDeCamas"
-               class="form-control" />
-
-    </div>
-
-    <div class="mb-3">
-
-        <label>Encargado</label>
-
-        <input asp-for="EncargadoDeLimpieza"
-               class="form-control" />
-
-    </div>
-
-    <div class="mb-3">
-
-        <label>Tipo</label>
-
-        <select asp-for="TipoDeHabitacion"
-                class="form-select">
-
-            <option value="1">Junior</option>
-
-            <option value="2">Superior</option>
-
-            <option value="3">Suite</option>
-
-        </select>
-
-    </div>
-
-    <div class="mb-3">
-
-        <label>Costo Limpieza</label>
-
-        <input asp-for="CostoDeLimpieza"
-               class="form-control" />
-
-    </div>
-
-    <div class="mb-3">
-
-        <label>Costo Reserva</label>
-
-        <input asp-for="CostoDeReserva"
-               class="form-control" />
-
-    </div>
-
-    <div class="form-check mb-3">
-
-        <input asp-for="Estado"
-               class="form-check-input" />
-
-        <label class="form-check-label">
-
-            Activa
-
-        </label>
-
-    </div>
-
-    <button class="btn btn-success">
-
-        Guardar Cambios
-
-    </button>
-
-    <a asp-action="Index"
-       class="btn btn-secondary">
-
-        Regresar
-
-    </a>
-
-</form>

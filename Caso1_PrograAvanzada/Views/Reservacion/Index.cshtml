@@ -4,78 +4,148 @@
     ViewData["Title"] = "Reservaciones";
 }
 
-<h2 class="mb-4">
+<div class="d-flex justify-content-between align-items-center mb-4">
 
-    Habitaciones Disponibles
+    <div>
 
-</h2>
+        <h2>📅 Reservaciones</h2>
 
-<div class="mb-3">
+        <p class="text-muted mb-0">
+            Seleccione una habitación para registrar una nueva reservación.
+        </p>
+
+    </div>
 
     <a asp-action="Buscar"
-       class="btn btn-info">
+       class="btn btn-outline-primary">
 
-        Buscar Reservación
+        🔍 Buscar Reservación
 
     </a>
 
 </div>
 
-<table class="table table-bordered table-hover">
+<div class="row">
 
-    <thead class="table-dark">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 mb-4">
 
-        <tr>
+            <div class="card h-100 shadow-sm">
 
-            <th>Código</th>
+                <div class="card-header bg-primary text-white text-center">
 
-            <th>Nombre</th>
+                    <h5 class="mb-0">
 
-            <th>Ubicación</th>
+                        @item.NombreDeHabitacion
 
-            <th>Capacidad</th>
+                    </h5>
 
-            <th>Costo Reserva</th>
+                </div>
 
-            <th>Acción</th>
+                <div class="card-body">
 
-        </tr>
+                    <p>
 
-    </thead>
+                        <strong>🏷 Código:</strong>
 
-    <tbody>
+                        @item.CodigoDeHabitacion
 
-        @foreach (var item in Model)
-        {
+                    </p>
 
-            <tr>
+                    <p>
 
-                <td>@item.CodigoDeHabitacion</td>
+                        <strong>📍 Ubicación:</strong>
 
-                <td>@item.NombreDeHabitacion</td>
+                        @item.Ubicacion
 
-                <td>@item.Ubicacion</td>
+                    </p>
 
-                <td>@item.CantidadDeHuespedesPermitidos</td>
+                    <p>
 
-                <td>@item.CostoDeReserva.ToString("C")</td>
+                        <strong>👤 Huéspedes:</strong>
 
-                <td>
+                        @item.CantidadDeHuespedesPermitidos
 
-                    <a asp-action="Create"
-                       asp-route-idHabitacion="@item.Id"
-                       class="btn btn-success">
+                    </p>
 
-                        Reservar
+                    <p>
 
-                    </a>
+                        <strong>🛏 Camas:</strong>
 
-                </td>
+                        @item.CantidadDeCamas
 
-            </tr>
+                    </p>
 
-        }
+                    <p>
 
-    </tbody>
+                        <strong>🛁 Baños:</strong>
 
-</table>
+                        @item.CantidadDeBanos
+
+                    </p>
+
+                    <p>
+
+                        <strong>🧹 Encargado:</strong>
+
+                        @item.EncargadoDeLimpieza
+
+                    </p>
+
+                    <p>
+
+                        <strong>🏨 Tipo:</strong>
+
+                        <span class="badge bg-info text-dark">
+
+                            @item.TipoHabitacionTexto
+
+                        </span>
+
+                    </p>
+
+                    <p>
+
+                        <strong>💲Costo Limpieza:</strong>
+
+                        @item.CostoDeLimpieza.ToString("C")
+
+                    </p>
+
+                    <p>
+
+                        <strong>💰Costo por Noche:</strong>
+
+                        <span class="fw-bold text-success">
+
+                            @item.CostoDeReserva.ToString("C")
+
+                        </span>
+
+                    </p>
+
+                </div>
+
+                <div class="card-footer bg-white">
+
+                    <div class="d-grid">
+
+                        <a asp-action="Create"
+                           asp-route-idHabitacion="@item.Id"
+                           class="btn btn-success">
+
+                            📝 Reservar Habitación
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

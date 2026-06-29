@@ -4,149 +4,131 @@
     ViewData["Title"] = "Detalle de Reservación";
 }
 
-<h2 class="mb-4">
+<div class="card shadow">
 
-    Detalle de la Reservación
+    <div class="card-header bg-success text-white">
 
-</h2>
+        <h3 class="mb-0">
 
-@if (TempData["Mensaje"] != null)
-{
-    <div class="alert alert-success">
+            📋 Detalle de la Reservación
 
-        @TempData["Mensaje"]
+        </h3>
 
     </div>
-}
-
-<div class="card">
 
     <div class="card-body">
 
-        <table class="table">
+        @if (TempData["Mensaje"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show">
 
-            <tr>
+                @TempData["Mensaje"]
 
-                <th>ID</th>
+                <button class="btn-close"
+                        data-bs-dismiss="alert">
+                </button>
 
-                <td>@Model.Id</td>
+            </div>
+        }
 
-            </tr>
+        <div class="row">
 
-            <tr>
+            <div class="col-md-6">
 
-                <th>Nombre</th>
+                <div class="card mb-4">
 
-                <td>@Model.NombreDeLaPersona</td>
+                    <div class="card-header bg-primary text-white">
 
-            </tr>
+                        👤 Información del Cliente
 
-            <tr>
+                    </div>
 
-                <th>Identificación</th>
+                    <div class="card-body">
 
-                <td>@Model.Identificacion</td>
+                        <p><strong>Nombre:</strong> @Model.NombreDeLaPersona</p>
 
-            </tr>
+                        <p><strong>Identificación:</strong> @Model.Identificacion</p>
 
-            <tr>
+                        <p><strong>Teléfono:</strong> @Model.Telefono</p>
 
-                <th>Teléfono</th>
+                        <p><strong>Correo:</strong> @Model.Correo</p>
 
-                <td>@Model.Telefono</td>
+                        <p><strong>Fecha Nacimiento:</strong> @Model.FechaNacimiento.ToString("dd/MM/yyyy")</p>
 
-            </tr>
+                        <p><strong>Dirección:</strong> @Model.Direccion</p>
 
-            <tr>
+                    </div>
 
-                <th>Correo</th>
+                </div>
 
-                <td>@Model.Correo</td>
+            </div>
 
-            </tr>
+            <div class="col-md-6">
 
-            <tr>
+                <div class="card mb-4">
 
-                <th>Fecha Nacimiento</th>
+                    <div class="card-header bg-warning">
 
-                <td>@Model.FechaNacimiento.ToShortDateString()</td>
+                        📅 Información de la Reservación
 
-            </tr>
+                    </div>
 
-            <tr>
+                    <div class="card-body">
 
-                <th>Dirección</th>
+                        <p><strong>ID:</strong> @Model.Id</p>
 
-                <td>@Model.Direccion</td>
+                        <p><strong>Fecha Inicio:</strong> @Model.FechaInicioReserva.ToString("dd/MM/yyyy")</p>
 
-            </tr>
+                        <p><strong>Fecha Fin:</strong> @Model.FechaFinReserva.ToString("dd/MM/yyyy")</p>
 
-            <tr>
+                        <p><strong>Fecha Registro:</strong> @Model.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</p>
 
-                <th>Fecha Inicio</th>
+                        <p>
 
-                <td>@Model.FechaInicioReserva.ToShortDateString()</td>
+                            <strong>Monto Total:</strong>
 
-            </tr>
+                            <span class="badge bg-success fs-6">
 
-            <tr>
+                                @Model.MontoTotal.ToString("C")
 
-                <th>Fecha Fin</th>
+                            </span>
 
-                <td>@Model.FechaFinReserva.ToShortDateString()</td>
+                        </p>
 
-            </tr>
+                        <p>
 
-            <tr>
+                            <strong>ID Habitación:</strong>
 
-                <th>Monto Total</th>
+                            @Model.IdHabitacion
 
-                <td>
+                        </p>
 
-                    <strong>
+                    </div>
 
-                        @Model.MontoTotal.ToString("C")
+                </div>
 
-                    </strong>
+            </div>
 
-                </td>
+        </div>
 
-            </tr>
+        <div class="d-flex justify-content-end gap-2">
 
-            <tr>
+            <a asp-action="Buscar"
+               class="btn btn-secondary">
 
-                <th>Fecha Registro</th>
+                🔍 Buscar Otra
 
-                <td>@Model.FechaDeRegistro.ToString("dd/MM/yyyy HH:mm")</td>
+            </a>
 
-            </tr>
+            <a asp-action="Index"
+               class="btn btn-primary">
 
-            <tr>
+                ← Regresar
 
-                <th>Habitación</th>
+            </a>
 
-                <td>@Model.IdHabitacion</td>
-
-            </tr>
-
-        </table>
+        </div>
 
     </div>
 
 </div>
-
-<br />
-
-<a asp-action="Index"
-   class="btn btn-primary">
-
-    Volver
-
-</a>
-
-<a asp-action="Buscar"
-   class="btn btn-secondary">
-
-    Buscar otra
-
-</a>

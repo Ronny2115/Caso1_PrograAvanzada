@@ -2,48 +2,107 @@
     ViewData["Title"] = "Buscar Reservación";
 }
 
-<h2 class="mb-4">
+<div class="row justify-content-center">
 
-    Buscar Reservación
+    <div class="col-lg-6">
 
-</h2>
+        <div class="card shadow">
 
-@if (TempData["Mensaje"] != null)
-{
-    <div class="alert alert-danger">
+            <div class="card-header bg-primary text-white">
 
-        @TempData["Mensaje"]
+                <h3 class="mb-0">
+
+                    🔍 Buscar Reservación
+
+                </h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <p class="text-muted">
+
+                    Ingrese el ID de la reservación que desea consultar.
+
+                </p>
+
+                @if (TempData["Mensaje"] != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show">
+
+                        @TempData["Mensaje"]
+
+                        <button class="btn-close"
+                                data-bs-dismiss="alert">
+                        </button>
+
+                    </div>
+                }
+
+                <form asp-action="Buscar"
+                      method="post"
+                      id="frmBuscar">
+
+                    <div class="mb-4">
+
+                        <label class="form-label fw-bold">
+
+                            ID de la Reservación
+
+                        </label>
+
+                        <input type="number"
+                               name="id"
+                               min="1"
+                               class="form-control form-control-lg"
+                               placeholder="Ingrese el ID de la reservación"
+                               required />
+
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+
+                        <a asp-action="Index"
+                           class="btn btn-secondary">
+
+                            ← Regresar
+
+                        </a>
+
+                        <button type="submit"
+                                class="btn btn-primary">
+
+                            🔎 Buscar
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
 
     </div>
+
+</div>
+
+@section Scripts {
+
+    <script>
+
+        document.getElementById("frmBuscar")
+            .addEventListener("submit", function () {
+
+                const boton = this.querySelector("button[type='submit']");
+
+                boton.disabled = true;
+
+                boton.innerHTML = "⏳ Buscando...";
+
+            });
+
+    </script>
+
 }
-
-<form asp-action="Buscar" method="post">
-
-    <div class="mb-3">
-
-        <label class="form-label">
-
-            ID de la Reservación
-
-        </label>
-
-        <input type="number"
-               name="id"
-               class="form-control" />
-
-    </div>
-
-    <button class="btn btn-primary">
-
-        Buscar
-
-    </button>
-
-    <a asp-action="Index"
-       class="btn btn-secondary">
-
-        Regresar
-
-    </a>
-
-</form>

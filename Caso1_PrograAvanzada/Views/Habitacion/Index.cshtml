@@ -4,115 +4,169 @@
     ViewData["Title"] = "Habitaciones";
 }
 
-<h2 class="mb-4">Listado de Habitaciones</h2>
+<div class="card shadow-sm mb-4">
+
+    <div class="card-body d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <h2 class="mb-1">🏨 Administración de Habitaciones</h2>
+
+            <p class="text-muted mb-0">
+                Gestión de habitaciones registradas en el sistema.
+            </p>
+
+        </div>
+
+        <a asp-action="Create" class="btn btn-primary btn-lg">
+
+            ➕ Nueva Habitación
+
+        </a>
+
+    </div>
+
+</div>
 
 @if (TempData["Mensaje"] != null)
 {
-    <div class="alert alert-success">
+    <div class="alert alert-success alert-dismissible fade show">
+
         @TempData["Mensaje"]
+
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+
     </div>
 }
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">
-        Nueva Habitación
-    </a>
-</p>
+<div class="card shadow-sm">
 
-<table class="table table-bordered table-hover">
+    <div class="card-body">
 
-    <thead class="table-dark">
+        <div class="table-responsive">
 
-        <tr>
+            <table class="table table-hover align-middle">
 
-            <th>Código</th>
-            <th>Nombre</th>
-            <th>Ubicación</th>
-            <th>Huéspedes</th>
-            <th>Camas</th>
-            <th>Baños</th>
-            <th>Encargado</th>
-            <th>Costo Limpieza</th>
-            <th>Costo Reserva</th>
-            <th>Tipo</th>
-            <th>Estado</th>
-            <th>Acciones</th>
+                <thead class="table-dark">
 
-        </tr>
+                    <tr>
 
-    </thead>
+                        <th>Código</th>
 
-    <tbody>
+                        <th>Habitación</th>
 
-        @if (Model != null && Model.Any())
-        {
-            @foreach (var item in Model)
-            {
-                <tr>
+                        <th>Huéspedes</th>
 
-                    <td>@item.CodigoDeHabitacion</td>
+                        <th>Camas</th>
 
-                    <td>@item.NombreDeHabitacion</td>
+                        <th>Baños</th>
 
-                    <td>@item.Ubicacion</td>
+                        <th>Ubicación</th>
 
-                    <td>@item.CantidadDeHuespedesPermitidos</td>
+                        <th>Encargado</th>
 
-                    <td>@item.CantidadDeCamas</td>
+                        <th>Tipo</th>
 
-                    <td>@item.CantidadDeBanos</td>
+                        <th>Costo Reserva</th>
 
-                    <td>@item.EncargadoDeLimpieza</td>
+                        <th>Estado</th>
 
-                    <td>@item.CostoDeLimpieza.ToString("C")</td>
+                        <th class="text-center">Acciones</th>
 
-                    <td>@item.CostoDeReserva.ToString("C")</td>
+                    </tr>
 
-                    <td>
-                        @(item.TipoDeHabitacion == 1 ? "Junior" :
-                            item.TipoDeHabitacion == 2 ? "Superior" :
-                            "Suite")
-                    </td>
+                </thead>
 
-                    <td>
-                        @if (item.Estado)
-                        {
-                            <span class="badge bg-success">Activo</span>
-                        }
-                        else
-                        {
-                            <span class="badge bg-danger">Inactivo</span>
-                        }
-                    </td>
+                <tbody>
 
-                    <td>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
 
-                        <a asp-action="Edit"
-                           asp-route-id="@item.Id"
-                           class="btn btn-warning btn-sm">
-                            Editar
-                        </a>
+                            <td>
 
-                        <a asp-action="Reservas"
-                           asp-route-id="@item.Id"
-                           class="btn btn-info btn-sm">
-                            Ver Reservas
-                        </a>
+                                <strong>@item.CodigoDeHabitacion</strong>
 
-                    </td>
+                            </td>
 
-                </tr>
-            }
-        }
-        else
-        {
-            <tr>
-                <td colspan="12" class="text-center">
-                    No existen habitaciones registradas.
-                </td>
-            </tr>
-        }
+                            <td>@item.NombreDeHabitacion</td>
 
-    </tbody>
+                            <td>@item.CantidadDeHuespedesPermitidos</td>
 
-</table>
+                            <td>@item.CantidadDeCamas</td>
+
+                            <td>@item.CantidadDeBanos</td>
+
+                            <td>@item.Ubicacion</td>
+
+                            <td>@item.EncargadoDeLimpieza</td>
+
+                            <td>
+
+                                <span class="badge bg-info text-dark">
+
+                                    @item.TipoHabitacionTexto
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                @item.CostoDeReserva.ToString("C")
+
+                            </td>
+
+                            <td>
+
+                                @if (item.Estado)
+                                {
+                                    <span class="badge bg-success">
+
+                                        Activa
+
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">
+
+                                        Inactiva
+
+                                    </span>
+                                }
+
+                            </td>
+
+                            <td class="text-center">
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-warning btn-sm">
+
+                                    ✏️ Editar
+
+                                </a>
+
+                                <a asp-action="Reservas"
+                                   asp-route-id="@item.Id"
+                                   class="btn btn-info btn-sm">
+
+                                    📋 Reservas
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

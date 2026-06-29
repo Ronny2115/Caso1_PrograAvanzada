@@ -29,5 +29,19 @@
         public DateTime? FechaDeModificacion { get; set; }
 
         public bool Estado { get; set; }
+
+        public string TipoHabitacionTexto
+        {
+            get
+            {
+                return TipoDeHabitacion switch
+                {
+                    1 => "Junior",
+                    2 => "Superior",
+                    3 => "Suite",
+                    _ => "No definido"
+                };
+            }
+        }
     }
 }
