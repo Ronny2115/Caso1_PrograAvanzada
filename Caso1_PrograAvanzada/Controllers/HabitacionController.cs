@@ -73,19 +73,7 @@ namespace Caso1_PrograAvanzada.Controllers
         [HttpPost]
         public IActionResult Edit(Habitacion habitacion)
         {
-            try
-            {
-                _habitacionBLL.EditarHabitacion(habitacion);
-
-                TempData["Mensaje"] = "Habitación actualizada correctamente.";
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Mensaje = ex.Message;
-                return View(habitacion);
-            }
+            return Content("EL POST FUNCIONA");
         }
 
         //==========================
